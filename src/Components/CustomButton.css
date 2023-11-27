@@ -1,34 +1,39 @@
 .custom-button {
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    border: none;
-    background-color: #4caf50;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .custom-button.warn {
-    background-color: #f44336;
-  }
-  
-  .custom-button:hover {
-    background-color: #45a049;
-  }
-  
-  .custom-button.warn:hover {
-    background-color: #c9302c;
-  }
-  
-  .custom-button[title]:hover::before {
-    content: attr(title);
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-style: italic;
-    margin-top: 10px;
-    z-index: 1;
-  }
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+}
+
+.custom-button.warn {
+  background-color:  #4caf50 ;
+}
+
+.custom-button.default {
+  background-color: #4caf50;
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+.custom-button.warn:hover {
+  background-color: #c9302c;
+}
+
+.custom-button[title]:hover::before {
+  content: attr(title);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-style: italic;
+  margin-top: 10px;
+  z-index: 1;
+}
+
   

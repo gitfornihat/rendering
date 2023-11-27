@@ -9,12 +9,16 @@ const CustomButton = ({ text, warnMessage, hint }) => {
   };
 
   return (
-    <button className={`custom-button ${warnMessage ? 'warn' : ''}`} onClick={handleClick} title={hint ? hint : ''}>
+    <button
+      className={`custom-button ${warnMessage ? 'warn' : ''} ${!warnMessage ? 'default' : ''}`}
+      onClick={handleClick}
+      title={hint ? hint : ''}
+    >
       {text}
     </button>
-    
   );
 };
 
 export default CustomButton;
+
 
